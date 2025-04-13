@@ -9,7 +9,9 @@ for i in range(10):
     contador=i+1
     file=f"file_{contador}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
     file_path =f"{folder_name}/{file}"
+    # Whrite the file with the name and date/time
     with open(file_path, 'w') as f:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"Archivo {file} creado el {timestamp}")
+# Print the number of files created
 print(f"Se crearon {contador} archivos en la carpeta {folder_name}")
