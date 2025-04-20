@@ -13,5 +13,3 @@ for i in {1..10}; do
     touch "$folder/$file"
     echo "Contenido del archivo $file" > "$folder/$file"
 done
-
-echo "Folder '$folder' created with 10 files inside."
